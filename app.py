@@ -61,8 +61,9 @@ def main():
             """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.title('Terminator: An AI Pest🐛 Diagnostic tool💯')
-
+    st.empty()
     file = st.file_uploader("Upload an image of a pest 😃 let me blow your mind with what i know", type=["jpg", "png"])
+    st.empty()
     st.write("link to images https://drive.google.com/drive/folders/1qz25BA_GICEXRVUSYO3g75UCiw7Zlmcn?usp=sharing")
  
 
