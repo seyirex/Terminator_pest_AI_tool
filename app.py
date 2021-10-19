@@ -60,9 +60,10 @@ def main():
             </style>
             """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-    st.title('Terminator: An AI Pest🐛 Diagnostic App💯')
+    st.title('Terminator: An AI Pest🐛 Diagnostic tool💯')
 
     file = st.file_uploader("Upload an image of a pest 😃", type=["jpg", "png"])
+    st.write("link to images https://drive.google.com/drive/folders/1qz25BA_GICEXRVUSYO3g75UCiw7Zlmcn?usp=sharing")
  
 
     if file is None:
