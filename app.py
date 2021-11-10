@@ -18,12 +18,13 @@ menu_items = {
 st.set_page_config(page_title="Terminator", page_icon="./images/pest-control.png", layout='centered',menu_items=menu_items)
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-@st.cache(allow_output_mutation=True)
+# @st.cache()
 def load_model():
 	model = tf.keras.models.load_model('./model/keras_model.h5')
 	return model
 
-#@st.cache
+
+@st.cache
 def read_markdown_file(markdown_file):
     return Path(markdown_file).read_text()
 
